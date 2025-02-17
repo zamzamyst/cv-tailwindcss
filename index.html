@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="./out/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS untuk menyembunyikan scrollbar */
+      .custom-scrollbar::-webkit-scrollbar {
+        display: none;
+        /* Menyembunyikan scrollbar untuk Chrome/Safari */
+      }
+
+      .custom-scrollbar {
+        scrollbar-width: none;
+        /* Menyembunyikan scrollbar untuk Firefox */
+      }
+
+      /* html, body {
+            overflow-x: hidden;
+        } */
+    </style>
+  </head>
+
+  <body
+    class="grid grid-cols-1 gap-1 bg-navy-z pt-52 font-ubuntu text-white md:grid-cols-2"
+  >
+    <header
+      id="navbar-section"
+      class=": fixed top-0 z-10 h-24 w-full bg-navy-z shadow-lg"
+    >
+      <div
+        class="mx-auto my-10 flex h-fit w-fit gap-5 text-[10px] font-semibold text-white-z md:mx-20"
+      >
+        <a href="#" class="text-orange-z">HOME</a>
+        <a href="#" class="hover:text-orange-z">PORTOFOLIO</a>
+        <a href="#" class="hover:text-orange-z">ALBUMS</a>
+        <a href="#" class="hover:text-orange-z">CONTACT</a>
+      </div>
+    </header>
+
+    <section
+      id="photo-section"
+      class="flex h-fit items-end justify-center p-10 md:order-2"
+    >
+      <div
+        class="relative flex h-full w-60 items-end blur-md duration-500 hover:blur-none"
+      >
+        <div
+          class="h-60 w-full rounded-full border-4 border-navy-z-2 bg-orange-z shadow-md shadow-white-z"
+        ></div>
+        <img
+          src="./src/assets/img/no-bg-profile.png"
+          alt="Zamzami"
+          class="absolute bottom-0.5 flex rounded-b-full"
+        />
+        <!-- <img src="./src/assets/img/pattern.png" alt="pattern" class="h-10"> -->
+      </div>
+    </section>
+
+    <section
+      id="main-section"
+      class="grid h-fit justify-items-center gap-5 p-5 md:order-1"
+    >
+      <div
+        id="main-intro"
+        class="h-fit max-w-72 text-center text-xs md:text-left"
+      >
+        <p class="text-lg">Software Developer</p>
+        <p class="text-2xl font-bold">Sultan Afdan Zamzami</p>
+        <p class="text-xs font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. So luta,
+          quisquam doloribus accusamus corporis tenetur veniam! Itaque saepe,
+          harum, accusamus ullam, accusantium praesentium maxime qui
+          reprehenderit
+          <span class="text-orange-z"
+            >adipisci consequatur eaque quasi dignissimos.</span
+          >
+        </p>
+      </div>
+      <div id="main-button" class="grid h-fit max-w-48 gap-2">
+        <button
+          id="btn-explore"
+          class="h-fit w-48 rounded-md bg-orange-z p-2 text-sm font-bold shadow-md shadow-navy-z-2 hover:bg-orange-600"
+        >
+          Explore
+        </button>
+        <button
+          id="btn-download-cv"
+          class="h-fit w-48 rounded-md border border-white-z p-2 text-sm font-bold text-white-z shadow-sm shadow-navy-z-2 hover:bg-white-z hover:text-navy-z"
+        >
+          Download CV
+        </button>
+      </div>
+      <div class="h-10 w-48">
+        <!-- Logo Social Media -->
+      </div>
+    </section>
+
+    <section
+      id="about-me-section"
+      class="grid h-fit w-full place-content-center justify-items-center gap-5 bg-[#424769] p-20 md:order-3 md:col-span-2"
+    >
+      <div id="" class="h-fit">
+        <h1 class="h-fit w-fit text-xl font-bold text-white-z">About Me</h1>
+        <hr class="mt-2 w-full border border-orange-z" />
+      </div>
+      <div
+        id="description-text"
+        class="h-fit max-w-96 text-center text-xs font-light"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum
+        fugiat quam fuga suscipit ab molestiae nam sed excepturi pariatur cum,
+        architecto praesentium! Accusantium aspernatur vitae ea, provident eum
+        quidem aliquid cumque, voluptas corporis facere ratione exercitationem
+        laudantium ducimus rerum culpa neque doloribus perspiciatis reiciendis.
+        Odio ullam labore, fugiat dolorum eius amet illum. A voluptatibus
+        praesentium tenetur, debitis eveniet obcaecati fugiat facilis harum esse
+        repudiandae ullam maiores id nulla iure dicta dignissimos inventore at!
+        Quasi eos vitae eaque provident iusto neque. Enim blanditiis labore
+        beatae accusantium odit, eum deleniti consequuntur consectetur tempore
+        ut aliquam deserunt totam dolores itaque nostrum maiores! Itaque saepe,
+        harum, accusamus ullam, accusantium praesentium maxime qui reprehenderit
+        <span class="text-orange-z"
+          >adipisci consequatur eaque quasi dignissimos.</span
+        >
+      </div>
+    </section>
+
+    <section
+      id="skill-section"
+      class="grid h-fit w-full place-content-center justify-items-center gap-20 p-20 md:order-4 md:col-span-2"
+    >
+      <div class="">
+        <h1 class="w-fit text-xl font-bold">Skills</h1>
+        <hr class="mt-2 w-full border border-orange-z" />
+      </div>
+      <div id="icon-area" class="h-30 -mt-5 grid w-72 grid-cols-4 gap-7 p-3">
+        <img
+          src="./src/assets/icon/html-logo.png"
+          alt="HTML"
+          class="h-auto w-auto duration-300 hover:scale-125"
+        />
+        <img
+          src="./src/assets/icon/css-logo.png"
+          alt="CSS"
+          class="h-auto w-auto duration-300 hover:rotate-90"
+        />
+        <img
+          src="./src/assets/icon/js-logo.png"
+          alt="JavaScript"
+          class="h-auto w-auto rounded-md duration-300 hover:translate-x-2"
+        />
+        <img
+          src="./src/assets/icon/python-logo.png"
+          alt="Python"
+          class="h-auto w-auto duration-300 hover:skew-y-12 hover:grayscale"
+        />
+        <img
+          src="./src/assets/icon/mysql-logo.png"
+          alt="MySQL"
+          class="h-aut w-auto rounded-md"
+        />
+        <img
+          src="./src/assets/icon/java-logo.jpg"
+          alt="MySQL"
+          class="h-auto w-auto rounded-md"
+        />
+      </div>
+      <div id="skill-category" class="mb-10 grid w-fit justify-center gap-3">
+        <button
+          class="h-10 w-48 rounded-lg bg-orange-z text-sm font-bold shadow-navy-z-2 hover:bg-orange-600"
+        >
+          Tech Stack
+        </button>
+        <button
+          class="h-10 rounded-lg border border-white-z bg-navy-z text-center text-sm font-bold shadow-navy-z-2 hover:bg-white-z hover:text-navy-z"
+        >
+          Dev Tools
+        </button>
+        <button
+          class="h-10 rounded-lg border border-white-z bg-navy-z text-center text-sm font-bold shadow-navy-z-2 hover:bg-white-z hover:text-navy-z"
+        >
+          Office Tools
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="education-section"
+      class="flex h-fit flex-col items-center justify-center gap-14 bg-navy-z-2 p-20 md:order-5 md:col-span-2"
+    >
+      <div>
+        <h1 class="w-fit text-xl font-bold">Education</h1>
+        <hr class="mt-2 w-full border border-orange-z" />
+      </div>
+      <div id="main-content" class="relative h-[550px] min-w-[420px] p-2">
+        <div
+          id="flow-line"
+          class="absolute left-[210px] z-0 h-[450px] w-0 rounded-full border-4 shadow-md shadow-navy-z-2"
+        >
+          <div
+            id="container"
+            class="absolute -left-[20px] top-[20px] z-10 grid w-56 grid-cols-5 gap-10"
+          >
+            <div id="circle-point" class="content-start">
+              <div
+                class="h-10 w-10 rounded-full bg-orange-z shadow-md shadow-navy-z-2"
+              ></div>
+            </div>
+            <div
+              id="text-content"
+              class="col-span-4 flex h-fit w-fit flex-wrap gap-2"
+            >
+              <a href="#" class="w-full text-xs font-bold hover:text-orange-z"
+                >Darul Quran Annayyiroh Boarding School</a
+              >
+              <h2 class="w-full text-xs italic">Graduated: 2020</h2>
+              <p class="w-full text-xs font-thin">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                laboriosam.
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="container"
+            class="absolute -right-[16px] top-[200px] z-10 grid w-56 grid-cols-5 gap-3"
+          >
+            <div
+              id="text-content"
+              class="col-span-4 flex h-fit w-fit flex-wrap gap-2 text-right"
+            >
+              <a href="#" class="w-full text-xs font-bold hover:text-orange-z"
+                >MAS Internasional TechnoNatura</a
+              >
+              <h2 class="w-full text-xs italic">Graduated: 2023</h2>
+              <p class="w-full text-xs font-thin">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                laboriosam.
+              </p>
+            </div>
+            <div id="circle-point" class="content-start">
+              <div
+                class="h-10 w-10 rounded-full bg-orange-z shadow-md shadow-navy-z-2"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            id="container"
+            class="absolute -left-[20px] top-[380px] z-10 grid w-56 grid-cols-5 gap-10"
+          >
+            <div id="circle-point" class="content-start">
+              <div
+                class="h-10 w-10 rounded-full bg-orange-z shadow-md shadow-navy-z-2"
+              ></div>
+            </div>
+            <div
+              id="text-content"
+              class="col-span-4 flex h-fit w-fit flex-wrap gap-2"
+            >
+              <a href="#" class="w-full text-sm font-bold hover:text-orange-z"
+                >S1 Sistem Informasi, Telkom University</a
+              >
+              <h2 class="w-full text-xs italic">Expected Graduation: 2027</h2>
+              <p class="w-full text-xs font-thin">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                laboriosam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="experiences-section"
+      class="mb-96 grid h-fit w-full place-content-center justify-items-center gap-10 p-20 md:order-6 md:col-span-2"
+    >
+      <div id="" class="mb-10 h-fit">
+        <h1 class="h-fit w-fit text-xl font-bold text-white-z">Experiences</h1>
+        <hr class="mt-2 w-full border border-orange-z" />
+      </div>
+      <div
+        class="grid-cols grid h-fit w-fit cursor-pointer grid-flow-row justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <!-- <div id="year-gap" class="grid w-full justify-items-start">
+                <h1 class="-mb-5 w-fit text-xl font-bold">2024</h1>
+            </div> -->
+        <div
+          id="card"
+          class="group flex h-fit w-full flex-col gap-4 rounded-xl bg-white-z p-3 shadow-lg shadow-gray-900"
+        >
+          <div class="">
+            <img
+              src="./src/assets/img/tut-wuri.jpg"
+              alt=""
+              class="rounded-md"
+            />
+          </div>
+          <div id="text" class="flex flex-col text-center text-navy-z">
+            <h1 class="text-md mb-1 font-bold">
+              Awardee Beasiswa Unggulan Masyarakat Berprestasi 2023
+            </h1>
+            <h2 class="mb-2 text-xs">
+              Ministry of Education and Culture Republic of Indonesia
+            </h2>
+            <h3 class="mb-5 text-xs font-medium">Nov 2023 -- Present</h3>
+            <button
+              href="#"
+              class="h-8 w-full rounded-md border border-navy-z text-xs font-bold text-navy-z hover:border-none hover:bg-orange-z hover:text-white-z"
+            >
+              AKU more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
